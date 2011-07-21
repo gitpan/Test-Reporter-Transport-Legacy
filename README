@@ -3,7 +3,7 @@ NAME
     modules
 
 VERSION
-    version 1.58
+    version 1.59
 
 DESCRIPTION
     This distribution contains legacy Test::Reporter transport modules from

@@ -1,9 +1,10 @@
 use strict;
 BEGIN{ if (not $] < 5.006) { require warnings; warnings->import } }
 package Test::Reporter::Transport::Net::SMTP::TLS;
-our $VERSION = '1.58'; # VERSION
+our $VERSION = '1.59'; # VERSION
 
-use base 'Test::Reporter::Transport::Net::SMTP';
+use Test::Reporter::Transport::Net::SMTP;
+our @ISA = qw/Test::Reporter::Transport::Net::SMTP/;
 
 use Net::SMTP::TLS;
 
@@ -21,7 +22,7 @@ Test::Reporter::Transport::Net::SMTP::TLS - Authenticated SMTP transport for Tes
 
 =head1 VERSION
 
-version 1.58
+version 1.59
 
 =head1 SYNOPSIS
 

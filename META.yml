@@ -10,7 +10,8 @@ author:
 build_requires:
   File::Find: 0
   File::Temp: 0
-  Test::More: 0
+  Test::More: 0.88
+  Test::Reporter: 1.58
   vars: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
@@ -32,19 +33,19 @@ no_index:
 provides:
   Test::Reporter::Transport::HTTPGateway:
     file: lib/Test/Reporter/Transport/HTTPGateway.pm
-    version: 1.58
+    version: 1.59
   Test::Reporter::Transport::Legacy:
     file: lib/Test/Reporter/Transport/Legacy.pm
-    version: 1.58
+    version: 1.59
   Test::Reporter::Transport::Mail::Send:
     file: lib/Test/Reporter/Transport/Mail/Send.pm
-    version: 1.58
+    version: 1.59
   Test::Reporter::Transport::Net::SMTP:
     file: lib/Test/Reporter/Transport/Net/SMTP.pm
-    version: 1.58
+    version: 1.59
   Test::Reporter::Transport::Net::SMTP::TLS:
     file: lib/Test/Reporter/Transport/Net/SMTP/TLS.pm
-    version: 1.58
+    version: 1.59
 requires:
   Carp: 0
   Encode: 0
@@ -53,11 +54,11 @@ requires:
   Mail::Send: 0
   Net::SMTP: 0
   Net::SMTP::TLS: 0
-  Test::Reporter::Transport: 0
+  Test::Reporter::Transport: 1.58
   bytes: 0
   perl: 5.006
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Test-Reporter-Transport-Legacy
   homepage: http://github.com/dagolden/test-reporter-transport-legacy
   repository: http://github.com/dagolden/test-reporter-transport-legacy
-version: 1.58
+version: 1.59

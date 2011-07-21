@@ -14,7 +14,8 @@ my %WriteMakefileArgs = (
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
     'File::Temp' => '0',
-    'Test::More' => '0',
+    'Test::More' => '0.88',
+    'Test::Reporter' => '1.58',
     'vars' => '0'
   },
   'CONFIGURE_REQUIRES' => {
@@ -32,10 +33,10 @@ my %WriteMakefileArgs = (
     'Mail::Send' => '0',
     'Net::SMTP' => '0',
     'Net::SMTP::TLS' => '0',
-    'Test::Reporter::Transport' => '0',
+    'Test::Reporter::Transport' => '1.58',
     'bytes' => '0'
   },
-  'VERSION' => '1.58',
+  'VERSION' => '1.59',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,9 +1,10 @@
 use strict;
 BEGIN{ if (not $] < 5.006) { require warnings; warnings->import } }
 package Test::Reporter::Transport::HTTPGateway;
-our $VERSION = '1.58'; # VERSION
+our $VERSION = '1.59'; # VERSION
 
-use base 'Test::Reporter::Transport';
+use Test::Reporter::Transport 1.58;
+our @ISA = qw/Test::Reporter::Transport/;
 
 use LWP::UserAgent;
 
@@ -60,7 +61,7 @@ Test::Reporter::Transport::HTTPGateway - HTTP transport for Test::Reporter
 
 =head1 VERSION
 
-version 1.58
+version 1.59
 
 =head1 SYNOPSIS
 
